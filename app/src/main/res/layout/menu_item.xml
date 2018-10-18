@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMenuItem"
+    android:layout_width="@dimen/toolbar_size"
+    android:layout_height="@dimen/toolbar_size"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/menu_icon_width"
+        android:layout_height="@dimen/menu_icon_height"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:textSize="@dimen/menu_name"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        tools:text="Title"
+        tools:textColor="#000000"
+        />
+
+</LinearLayout>

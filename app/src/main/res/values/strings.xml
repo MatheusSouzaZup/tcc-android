@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RedeValor</string>
+
+
+    <!--menu-->
+    <string name="menu_clipboard">Tarefas</string>
+    <string name="menu_restore">Iniciadas</string>
+    <string name="menu_historic">Histórico</string>
+    <string name="menu_user">Usuário</string>
+
+
+</resources>

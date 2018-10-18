@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">18sp</dimen>
+    <dimen name="menu_name">12sp</dimen>
+    <dimen name="menu_icon_width">58dp</dimen>
+    <dimen name="menu_icon_height">38dp</dimen>
+    <dimen name="toolbar_size">62dp</dimen>
+
+</resources>

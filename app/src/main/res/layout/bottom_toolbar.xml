@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <br.com.bluedot.redevalor.custom.ItemMenu
+        android:id="@+id/menuClipBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        app:icon="@drawable/menu_clipboard"
+        app:title="@string/menu_clipboard" />
+
+    <br.com.bluedot.redevalor.custom.ItemMenu
+        android:id="@+id/menuRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:icon="@drawable/menu_restore"
+        app:title="@string/menu_restore" />
+
+    <br.com.bluedot.redevalor.custom.ItemMenu
+        android:id="@+id/menuHistoric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:icon="@drawable/menu_historic"
+        app:title="@string/menu_historic" />
+
+    <br.com.bluedot.redevalor.custom.ItemMenu
+        android:id="@+id/menuUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/menu_user"
+        app:title="@string/menu_user" />
+
+</LinearLayout>
