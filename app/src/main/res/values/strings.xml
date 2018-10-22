@@ -21,6 +21,13 @@
     <string name="login_singin">Entrar</string>
     <string name="login_register">Cadastrar</string>
 
+    <!--Register-->
+    <string name="register_name">Nome</string>
+    <string name="register_email">Email</string>
+    <string name="register_function">Função</string>
+    <string name="register_password">Password</string>
+    <string name="register_password_again">Confime Password</string>
+
     <!--NetWork Problemns-->
     <string name="lost_session_message">A sessão excedeu seu tempo limite</string>
 

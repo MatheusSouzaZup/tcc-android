@@ -72,5 +72,15 @@
         <item name="android:fontFamily">ChaletNewYorkNineteenSixty.ttf</item>
     </style>
 
+    <style name="spinner_appearance" parent="android:Widget.DeviceDefault.Spinner">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingBottom">@dimen/small_margin</item>
+        <item name="android:paddingLeft">@dimen/default_margin</item>
+        <item name="android:paddingRight">@dimen/default_margin</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:popupBackground">@color/colorWhite</item>
+        <item name="android:fontFamily">ChaletNewYorkNineteenSixty.ttf</item>
+    </style>
 
 </resources>
