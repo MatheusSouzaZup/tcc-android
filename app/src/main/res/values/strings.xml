@@ -1,12 +1,37 @@
 <resources>
     <string name="app_name">RedeValor</string>
 
-
+    <string name="rede_valor">Rede Valor</string>
     <!--menu-->
     <string name="menu_clipboard">Tarefas</string>
     <string name="menu_restore">Iniciadas</string>
     <string name="menu_historic">Histórico</string>
     <string name="menu_user">Usuário</string>
 
+    <!--titles-->
+    <string name="title_tasks">Tarefas</string>
+    <string name="title_restore">Tarefas Iniciadas</string>
+    <string name="title_historic">Histórico</string>
+    <string name="title_user">Usuário</string>
+
+    <!--login-->
+    <string name="login_user">Usuário</string>
+    <string name="login_password">Senha</string>
+    <string name="login_forgot_password">Esqueci minha senha</string>
+    <string name="login_singin">Entrar</string>
+    <string name="login_register">Cadastrar</string>
+
+    <!--NetWork Problemns-->
+    <string name="lost_session_message">A sessão excedeu seu tempo limite</string>
+
+    <!--Common-->
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="ok">Ok</string>
+    <string name="exit">Sair</string>
+
+
+    <!--Phrases-->
+    <string name="login_description">Faça o login com seu e-mail e senha ou cadastre-se. Tudo isso usando seu e-mail corporativo!</string>
 
 </resources>

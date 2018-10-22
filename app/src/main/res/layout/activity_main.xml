@@ -6,18 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/tvTitle"
+    <RelativeLayout
+        android:id="@+id/topToolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textSize="@dimen/title"/>
+        android:layout_height="@dimen/toobar_size_height">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/title" />
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tvTitle"
+            android:alpha="0.8"
+            android:background="@color/colorGray" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:layout_below="@id/topToolbar" />
 
     <View
+        android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="0.5dp"
         android:layout_above="@id/btToolbar"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorRed" />
+        android:layout_marginBottom="5dp"
+        android:alpha="0.8"
+        android:background="@color/colorGray" />
 
     <br.com.bluedot.redevalor.custom.ToolbarBottom
         android:id="@+id/btToolbar"

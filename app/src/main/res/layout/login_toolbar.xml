@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_login"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/big_action_bar_size"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/rede_valor"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        style="@style/toolbar_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        app:srcCompat="@drawable/ic_close_grey" />
+</RelativeLayout>

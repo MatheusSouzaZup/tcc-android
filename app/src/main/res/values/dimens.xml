@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="title">18sp</dimen>
+    <dimen name="title">22sp</dimen>
     <dimen name="menu_name">12sp</dimen>
-    <dimen name="menu_icon_width">58dp</dimen>
-    <dimen name="menu_icon_height">38dp</dimen>
-    <dimen name="toolbar_size">62dp</dimen>
+    <dimen name="menu_icon_width">48dp</dimen>
+    <dimen name="menu_icon_height">28dp</dimen>
+    <dimen name="toolbar_size">60dp</dimen>
+    <dimen name="toobar_size_height">45dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="button_dialog_height">70dp</dimen>
+    <dimen name="button_width">253dp</dimen>
+    <dimen name="button_height">70dp</dimen>
+    <dimen name="textview_wight">253dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+    <dimen name="big_action_bar_size">96dp</dimen>
+    <dimen name="actionbar_icon">24dp</dimen>
 
 </resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:background="@color/grayOpaque"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0.9"
+            android:layout_weight="1"
+            android:background="@color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_popup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:elevation="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/default_margin">
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    style="@style/CustomPopupMessage"
+                    android:scrollbars="vertical"
+                    android:maxLines="8" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_top_button"
+                style="@style/CustomPopupButton"
+                android:layout_height="@dimen/button_dialog_height"
+                tools:text="@string/yes" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/tv_bottom_button"
+                style="@style/CustomPopupButton.Alpha"
+                android:layout_height="@dimen/button_dialog_height"
+                tools:text="@string/no" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

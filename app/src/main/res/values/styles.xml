@@ -3,9 +3,74 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorRedOrage</item>
+        <item name="colorPrimaryDark">@color/colorRed</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="error_appearance">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="EasyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CustomPopupButton">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">@dimen/default_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CustomPopupMessage">
+        <item name="android:layout_width">@dimen/textview_wight</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomPopupButton.Alpha" parent="CustomPopupButton">
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <style name="toolbar_icon">
+        <item name="android:layout_height">@dimen/actionbar_icon</item>
+        <item name="android:layout_width">@dimen/actionbar_icon</item>
+    </style>
+
+    <style name="button_pink">
+        <item name="android:background">@drawable/bg_button_round_red</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:fontFamily">ChaletNewYorkNineteenSixty.ttf</item>
+    </style>
+
+    <style name="button_border">
+        <item name="android:background">@drawable/bg_button_border_red</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorRedOrage</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:fontFamily">ChaletNewYorkNineteenSixty.ttf</item>
+    </style>
+
 
 </resources>
