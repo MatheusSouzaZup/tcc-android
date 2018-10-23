@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
 
     <br.com.bluedot.redevalor.custom.ToolbarLogin
         android:id="@+id/tbLogin"
@@ -13,9 +14,9 @@
         android:id="@+id/tilEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tbLogin"
+        android:layout_above="@id/tilName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/small_margin"
         android:paddingLeft="@dimen/big_margin"
         android:paddingRight="@dimen/big_margin"
         app:errorTextAppearance="@style/error_appearance">
@@ -34,9 +35,8 @@
         android:id="@+id/tilName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tilEmail"
+        android:layout_above="@id/spFunction"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
         android:paddingLeft="@dimen/big_margin"
         android:paddingRight="@dimen/big_margin"
         app:errorTextAppearance="@style/error_appearance">
@@ -52,12 +52,64 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/spUf"
+        android:id="@+id/spFunction"
         style="@style/spinner_appearance"
         android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_height="52dp"
-        android:layout_below="@id/tilName"
-        android:layout_margin="@dimen/small_margin"
-        android:layout_weight="2.8" />
+        android:layout_marginTop="@dimen/small_margin" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spFunction"
+        android:layout_marginTop="@dimen/small_margin"
+        android:paddingLeft="@dimen/big_margin"
+        android:paddingRight="@dimen/big_margin"
+        app:errorTextAppearance="@style/error_appearance">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/register_password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/small_margin"
+        android:paddingLeft="@dimen/big_margin"
+        android:paddingRight="@dimen/big_margin"
+        app:errorTextAppearance="@style/error_appearance">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/register_password_again"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btLogin"
+        style="@style/button_pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/big_margin"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:text="@string/login_singin" />
 
 </RelativeLayout>

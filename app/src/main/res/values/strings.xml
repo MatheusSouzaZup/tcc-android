@@ -25,8 +25,8 @@
     <string name="register_name">Nome</string>
     <string name="register_email">Email</string>
     <string name="register_function">Função</string>
-    <string name="register_password">Password</string>
-    <string name="register_password_again">Confime Password</string>
+    <string name="register_password">Senha</string>
+    <string name="register_password_again">Confirme a Senha</string>
 
     <!--NetWork Problemns-->
     <string name="lost_session_message">A sessão excedeu seu tempo limite</string>

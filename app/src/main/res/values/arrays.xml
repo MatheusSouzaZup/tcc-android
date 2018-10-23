@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="function_array">
+        <item>Assistente de Baixas</item>
+        <item>Fiscal</item>
+        <item>Conferente</item>
+        <item>Assistente de Doca</item>
+    </string-array>
+
+    <string-array name="gg">
+
+    </string-array>
+</resources>
