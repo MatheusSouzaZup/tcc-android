@@ -4,13 +4,13 @@
     <string name="rede_valor">Rede Valor</string>
     <!--menu-->
     <string name="menu_clipboard">Tarefas</string>
-    <string name="menu_restore">Iniciadas</string>
+    <string name="menu_restore">Salvas</string>
     <string name="menu_historic">Histórico</string>
     <string name="menu_user">Usuário</string>
 
     <!--titles-->
     <string name="title_tasks">Tarefas</string>
-    <string name="title_restore">Tarefas Iniciadas</string>
+    <string name="title_restore">Tarefas Salvas</string>
     <string name="title_historic">Histórico</string>
     <string name="title_user">Usuário</string>
 
@@ -37,8 +37,16 @@
     <string name="ok">Ok</string>
     <string name="exit">Sair</string>
 
+    <!--Status-->
+    <string name="start">Inicar</string>
+    <string name="in_progress">Em Processo</string>
+    <string name="finish">Finalizado</string>
+
+    <string name="task">Tarefa: </string>
+    <string name="send">Enviar</string>
 
     <!--Phrases-->
     <string name="login_description">Faça o login com seu e-mail e senha ou cadastre-se. Tudo isso usando seu e-mail corporativo!</string>
+    <string name="restore_nothing_send">Você não tem sincronização a serem feitas.</string>
 
 </resources>

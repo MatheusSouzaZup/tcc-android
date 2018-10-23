@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginEnd="@dimen/small_margin"
+    android:layout_marginStart="@dimen/small_margin"
+    android:layout_marginTop="@dimen/medium_margin"
+    android:background="@drawable/bg_card">
+
+
+    <TextView
+        android:id="@+id/taskId"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:text="@string/task"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ivId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/taskId"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        tools:text="123456" />
+
+
+    <br.com.bluedot.redevalor.custom.status.StatusView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/medium_margin"/>
+
+</RelativeLayout>

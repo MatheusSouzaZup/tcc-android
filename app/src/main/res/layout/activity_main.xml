@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".ui.MainActivity">
 
     <RelativeLayout
@@ -17,8 +18,8 @@
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:textAlignment="center"
             android:paddingTop="5dp"
+            android:textAlignment="center"
             android:textColor="@color/colorRed"
             android:textSize="@dimen/title" />
 

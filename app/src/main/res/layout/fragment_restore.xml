@@ -4,14 +4,33 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_login"
         android:layout_centerVertical="true"
-        android:text="2"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/restore_nothing_send"
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
-        android:textSize="40sp" />
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btSend"
+        style="@style/button_pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:text="@string/send" />
 
 </RelativeLayout>
