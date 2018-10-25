@@ -3,13 +3,11 @@ package br.com.bluedot.redevalor.ui.historic;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,19 +17,19 @@ import br.com.bluedot.redevalor.ui.BaseFragment;
 import br.com.bluedot.redevalor.ui.MainActivity;
 import butterknife.BindView;
 
-public class HistoricFragment extends BaseFragment implements HistoricAdapter.HistoricCallBack {
+public class HistoricFragmentMonth extends BaseFragment implements HistoricAdapter.HistoricCallBack {
     @BindView(R.id.recyclerView)
-    RecyclerView recyclerView;
+    RecyclerView mRecyclerView;
 
-    public static final String TAG = HistoricFragment.class.getSimpleName();
+    public static final String TAG = HistoricFragmentMonth.class.getSimpleName();
 
-    public static HistoricFragment newInstance() {
-        return new HistoricFragment();
+    public static HistoricFragmentMonth newInstance() {
+        return new HistoricFragmentMonth();
     }
 
     @Override
     public View onCreateViewBinder(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_historic, container, false);
+        return inflater.inflate(R.layout.fragment_historic_month, container, false);
     }
 
     @Override
@@ -40,21 +38,22 @@ public class HistoricFragment extends BaseFragment implements HistoricAdapter.Hi
         init();
     }
 
-    public void init() {
+    private void init() {
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(llm);
-        recyclerView.setAdapter(new HistoricAdapter(getMonths(), this));
+        mRecyclerView.setAdapter(new HistoricAdapter(getList(),this));
+        mRecyclerView.setLayoutManager(llm);
     }
 
-    public List<String> getMonths() {
-        List<String> mMonths = new ArrayList<>();
-        mMonths.add("2018");
-        return mMonths;
+    private List<String> getList() {
+        List<String> list = new ArrayList<>();
+        list.add("Janeiro");
+        list.add("Fevereiro");
+        return list;
     }
 
     @Override
     public void onDateClick() {
-        ((MainActivity) getActivity()).replaceFragment(HistoricFragmentMonth.newInstance(), HistoricFragmentMonth.TAG);
+        ((MainActivity) getActivity()).replaceFragment(HistoricFragmentCalendar.newInstance(), HistoricFragmentCalendar.TAG);
     }
 }
