@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="400dp"
     android:layout_marginEnd="@dimen/small_margin"
     android:layout_marginStart="@dimen/small_margin"
     android:layout_marginTop="@dimen/medium_margin"
@@ -14,8 +14,8 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="10dp"
         android:text="@string/task"
         android:textColor="@color/colorBlack"
         android:textSize="18sp" />
@@ -25,7 +25,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@id/taskId"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
         android:textColor="@color/colorBlack"
         android:textSize="18sp"
         tools:text="123456" />
@@ -35,8 +35,84 @@
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/medium_margin"/>
+
+    <TextView
+        android:id="@+id/products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:text="Produtos"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/taskId"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:text="Nome"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="@dimen/medium_margin"/>
+        android:layout_marginEnd="20dp"
+        android:text="Quantidade"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/firstproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:text="Engradado Coca Cola"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_below="@id/name"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/firstquantidy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/quantidade"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:text="10"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
 
 </RelativeLayout>

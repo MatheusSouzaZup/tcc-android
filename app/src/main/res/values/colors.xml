@@ -13,8 +13,9 @@
     <color name="colorBrown">#964b00</color>
     <color name="grayOpaque">#80292929</color>
     <color name="transparent">#00000000</color>
-    <color name="colorGreen">#00FF00</color>
+    <color name="colorGreen">#008000</color>
     <color name="colorYellow">#FFFF00</color>
     <color name="colorGrayLight">#E8E8E8</color>
+    <color name="colorBlue">#3333ff</color>
 
 </resources>

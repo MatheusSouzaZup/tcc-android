@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
+import com.yuyakaido.android.cardstackview.CardStackView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,8 +25,8 @@ import br.com.bluedot.redevalor.ui.MainActivity;
 import butterknife.BindView;
 
 public class ClipBoardFragment extends BaseFragment implements ClipBoardContract.View {
-    @BindView(R.id.recyclerView)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.cardStack)
+    CardStackView mCardStack;
 
 
     public static final String TAG = ClipBoardFragment.class.getSimpleName();
@@ -41,10 +44,10 @@ public class ClipBoardFragment extends BaseFragment implements ClipBoardContract
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ClipBoardAdapter mAdapter = new ClipBoardAdapter(getList());
-        LinearLayoutManager llm = new LinearLayoutManager(getContext());
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
-        mRecyclerView.setLayoutManager(llm);
-        mRecyclerView.setAdapter(mAdapter);
+        CardStackLayoutManager manager = new CardStackLayoutManager(getContext());
+        mCardStack.setAdapter(mAdapter);
+        mCardStack.setLayoutManager(manager);
+        mCardStack.swipe();
     }
 
 
