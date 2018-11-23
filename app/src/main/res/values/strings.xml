@@ -10,7 +10,7 @@
 
     <!--titles-->
     <string name="title_tasks">Tarefas</string>
-    <string name="title_restore">Tarefas Salvas</string>
+    <string name="title_restore">Tarefas Off-Line</string>
     <string name="title_historic">Histórico</string>
     <string name="title_user">Usuário</string>
 

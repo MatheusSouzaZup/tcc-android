@@ -26,7 +26,7 @@ public class RestoreAdapter extends RecyclerView.Adapter<RestoreAdapter.ClipBoar
     @NonNull
     @Override
     public ClipBoardViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.clipboard_item, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.restore_item, viewGroup, false);
         return new ClipBoardViewHolder(view);
     }
 

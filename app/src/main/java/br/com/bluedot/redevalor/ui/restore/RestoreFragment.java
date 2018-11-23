@@ -44,7 +44,7 @@ public class RestoreFragment extends BaseFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ClipBoardAdapter mAdapter = new ClipBoardAdapter(getList());
+        RestoreAdapter mAdapter = new RestoreAdapter(getList());
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(llm);

@@ -16,5 +16,6 @@
     <dimen name="big_margin">32dp</dimen>
     <dimen name="big_action_bar_size">96dp</dimen>
     <dimen name="actionbar_icon">24dp</dimen>
+    <dimen name="list_height">80dp</dimen>
 
 </resources>

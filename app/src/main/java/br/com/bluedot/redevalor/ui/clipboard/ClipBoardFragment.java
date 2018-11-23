@@ -47,7 +47,6 @@ public class ClipBoardFragment extends BaseFragment implements ClipBoardContract
         CardStackLayoutManager manager = new CardStackLayoutManager(getContext());
         mCardStack.setAdapter(mAdapter);
         mCardStack.setLayoutManager(manager);
-        mCardStack.swipe();
     }
 
 
