@@ -36,6 +36,7 @@
     <string name="no">Não</string>
     <string name="ok">Ok</string>
     <string name="exit">Sair</string>
+    <string name="new_task">Nova Tarefa</string>
 
     <!--Status-->
     <string name="start">Inicar</string>
@@ -48,5 +49,6 @@
     <!--Phrases-->
     <string name="login_description">Faça o login com seu e-mail e senha ou cadastre-se. Tudo isso usando seu e-mail corporativo!</string>
     <string name="restore_nothing_send">Você não tem sincronização a serem feitas.</string>
+    <string name="dialog_reason">Motivo</string>
 
 </resources>

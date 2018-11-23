@@ -2,35 +2,62 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite">
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btNewTask"
+                style="@style/button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:text="@string/new_task" />
+
+            <Button
+                android:id="@+id/btSend"
+                style="@style/button_pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:text="@string/send" />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
+        android:layout_centerVertical="true"
         android:id="@+id/tvEmpty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar_login"
-        android:layout_centerVertical="true"
+        android:layout_gravity="center"
         android:lineSpacingExtra="8sp"
         android:text="@string/restore_nothing_send"
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
         android:visibility="gone" />
-
-    <Button
-        android:id="@+id/btSend"
-        style="@style/button_pink"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:layout_marginEnd="@dimen/medium_margin"
-        android:layout_marginStart="@dimen/medium_margin"
-        android:text="@string/send" />
 
 </RelativeLayout>

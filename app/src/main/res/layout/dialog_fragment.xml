@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/dialog_reason"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/etReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvReason"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/transparent"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/btLogin"
+            style="@style/button_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:layout_marginStart="@dimen/big_margin"
+            android:layout_marginEnd="@dimen/big_margin"
+            android:text="@string/send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

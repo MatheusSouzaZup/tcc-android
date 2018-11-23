@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
 import com.yuyakaido.android.cardstackview.CardStackView;
@@ -22,11 +23,15 @@ import br.com.bluedot.redevalor.data.ResponseError;
 import br.com.bluedot.redevalor.data.model.Task;
 import br.com.bluedot.redevalor.ui.BaseFragment;
 import br.com.bluedot.redevalor.ui.MainActivity;
+import br.com.bluedot.redevalor.ui.MyDialogFragment;
 import butterknife.BindView;
+import butterknife.OnClick;
 
 public class ClipBoardFragment extends BaseFragment implements ClipBoardContract.View {
     @BindView(R.id.cardStack)
     CardStackView mCardStack;
+    @BindView(R.id.ivError)
+    ImageView ivError;
 
 
     public static final String TAG = ClipBoardFragment.class.getSimpleName();
@@ -72,6 +77,13 @@ public class ClipBoardFragment extends BaseFragment implements ClipBoardContract
 
     @Override
     public void showDialogUpdateApplication(ResponseError error) {
+
+    }
+
+    @OnClick
+    public void onErrorClick() {
+        MyDialogFragment myDialogFragment = MyDialogFragment.newInstance();
+        myDialogFragment.show(getFragmentManager(), "");
 
     }
 
